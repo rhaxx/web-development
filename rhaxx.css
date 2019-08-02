@@ -1,14 +1,27 @@
 body {
-    background-color : lightblue;
+    background-color: lightblue;
 }
 h1 {
-    color : purple;
-    text-align : center;
+    color: purple;
+    text-align: center;
 }
 h2 {
-    color : red;
-    text-align : right;
+    color: red;
+    text-align: right;
+}
+h3 {
+    color: violet;
+    text-align: left;
 }
 p.important {
-    color : green;
+    color: green;
+}
+p.notImportant {
+    color: grey;
+}
+p.fruity {
+    color: yellow;
+}
+li {
+    color: blue;
 }
