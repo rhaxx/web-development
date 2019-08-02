@@ -2,39 +2,29 @@
 <html>
     <head>
         <title> Rhaxx's Website! </title>
-        <!-- this part of the file is CSS -->
-        <style>
-            body {
-                background-color : lightblue;
-            }
-            h1 {
-                color : purple;
-                text-align : center;
-            }
-            h2 {
-                color : red;
-                text-align : right;
-            }
-        </style>
+        <!-- link to rhaxx.css -->
+        <link rel="stylesheet" type="text/css" href="rhaxx.css">
     </head>
     <body>
-        <p> <!-- link to source code for this file -->
-            <a href="https://github.com/rhaxx/web-development/blob/master/rhaxx.html">Source for this html.</a>
-        </p>
+        <!-- link to source -->
+        <a href="https://github.com/rhaxx/web-development/blob/master/rhaxx.html">GitHub</a><br>
+
         Testing testing testing. <br>
         More breaks here and here and there. <br>
         <h1> First heading </h1>
         Testing to see what happens if I just type here with no paragraph.
-        <p>
+        <p class="important">
             A section defined as a new paragraph.
         </p>
-        <h2> Second heading </h2>
+        <h2 id="header2"> Second heading </h2>
+        <button onclick="displayResult()"> Change Text </button>
         <p>
             A section defined as another paragraph.
         </p>
         More random text to see what's up. <br>
         <br> What is this? another break? </br>
         <p>
+            testing. <br>
             <li> This is <em>Italics</em>. </li> <br>
             <li> This is <strong>Bold</strong>. </li> <br>
             <ul> This is <ins>Underlined</ins>. </ul> <br>
