@@ -6,10 +6,110 @@
         <link rel="stylesheet" type="text/css" href="rhaxx.css">
     </head>
     <body>
-        <!-- link to source -->
-        <a href="https://github.com/rhaxx/web-development/">GitHub</a><br>
+        <!-- link to source, opens in new tab -->
+        <a href="https://github.com/rhaxx/web-development/" target="_blank">Rhaxx's GitHub</a><br>
 
-        <h1> FIRST HEADING </h1>
+        <!-- headings -->
+        <h1> Heading One </h1>
+        <h2> Heading Two </h2>
+        <h3> Heading Three </h3>
+        <h4> Heading Four </h4>
+        <h5> Heading Five </h5>
+        <h6> Heading Six </h6>
+
+        <!-- unordered list // bullet points // basic edits -->
+        <ul> 
+            <li><em>Italics</em></li>
+            <li><strong>Bold</strong></li>
+            <li><ins>Underlined</ins></li>
+            <li><del>Deleted</del></li>
+            <li><small>Small</small></li>
+        </ul>
+
+        <!-- ordered list // numbered // basic edits -->
+        <ol> 
+            <li><em>Italics</em></li>
+            <li><strong>Bold</strong></li>
+            <li><ins>Underlined</ins></li>
+            <li><del>Deleted</del></li>
+            <li><small>Small</small></li>
+        </ol>
+
+        <!-- creating a table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rhaxx</td>
+                    <td>Rhaxx@random.com</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Dhexx</td>
+                    <td>Dhexx@random.com</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Mhaxx</td>
+                    <td>Mhaxx@random.com</td>
+                    <td>24</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- horizontal line -->
+        <hr>
+
+        <!-- forms, method="GET" shows up in URL (NOT SAFE) -->
+        <form action="process.php" method="POST">
+            <div>    
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter last name">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter email address">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+
         <p class="important">
             Everything written in here should be green. <br>
             This is classified as an "important" paragraph by the css file. <br>
@@ -34,6 +134,7 @@
             <!-- This is a comment -->
         </p>
 
+
         <p class="date" id="demo"></p>
 
         <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
@@ -41,6 +142,8 @@
 
         <!-- link to rhaxx.js -->
         <script src="rhaxx.js"></script><br>
+
+        
 
         <img src=https://www.w3schools.com/w3css/img_fjords.jpg style=width:600px;height:400px alt=Fjord>
     </body>
