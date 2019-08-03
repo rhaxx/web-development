@@ -1,5 +1,7 @@
 # web-development
- Practice for Full Stack Web Development
- 1) HTML
- 2) CSS
- 3) JavaScript
+
+Practice for Full Stack Web Development
+
+1) HTML
+2) CSS
+3) JavaScript
