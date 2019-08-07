@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/opencv.css">
+    <script async src="js/opencv.js"></script>
+</head>
+<body>
+    <img id="input-image" width="200" height="200">
+    <input type="file" id="input-file">
+</body>
+<script>
+    let input_image = document.getElementById('input-image');
+    let input_file = document.getElementById('input-file');
+
+    input_file.addEventListener('change',(e) => {input_image.src = URL.createObjectURL(e.target.files[0])},false);
+
+    input_image.onload = function() {
+        let mat = cv.imread(input_image);
+        cv.cvtColor(mat,mat,cv.COLOR_RGB2GRAY);
+        cv.imshow('output',mat);
+        mat.delete();
+    }
+</script>
+</html>
